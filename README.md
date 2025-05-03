@@ -34,8 +34,6 @@ GasByGas is a web-based gas distribution system designed for **GasByGas (Pvt) Lt
 | Oshini Vidurangi Ginige        | Frontend Developer        |
 | Nethmi Hansila Kodagoda Yapa   | Database Engineer         |
 | Sithumi Hansika                | Mobile App Developer      |
-| Chamara Pradeep Perera         | Software Tester           |
-| Nadeesha Kumari Liyanage       | System Analyst            |
 
 ## 📂 Project Structure
 
