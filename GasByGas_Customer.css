@@ -1,0 +1,462 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e8c6ff;
+    background-image: url(Pictures/HBG04.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+}
+
+/* Container for the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+    scroll-padding-top: 5.50rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex-grow: 1;
+    flex-basis: 200px;
+  }
+/* General styling for the navigation bar */
+.nav-bar {
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Places the navbar on top of other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(30px); /* Adds a blur effect to the background */
+    background-color: #a825ff; /* Dark background color */
+    box-shadow: 0px 0px 30px #a825ff;
+    max-width: auto;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    border: 1px solid #a825ff; /* Border to contain the blur effect */
+}
+
+/* Logo section */
+.logo img {
+    height: 50px; /* Adjust the logo size */
+    width: auto;
+}
+
+/* Navigation links */
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between navigation links */
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #000;  
+  background-color: #e8c6ff; /* Slightly lighter background on hover */
+  border-radius: 5px;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #888; /* Slightly darker border on focus */
+}
+
+.search-bar .search {
+    padding: 5px 10px;
+    border: none;
+    background-color: #575757;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar .search:hover {
+    background-color: #444; /* Darker background on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+}
+/*header*/
+header {
+    display: flex; /* Enable flexbox for layout alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    padding: 55px 20px 40px; /* Top, left/right, and bottom padding */
+    background-color: #333; /* Fallback background color */
+    background-image: url('Pictures/01.jpg'); /* Path to the background image */
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin */
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+.sub_title {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.Gas_Requests {
+    background-color: transparent; /* Primary button color */
+    color: #1d1d1d;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    border: 2.0px solid #e8c6ff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.Gas_Requests:hover {
+    background: #a825ff;
+    color: #ffffff;
+    box-shadow: 0 0 30px 5px #a825ff;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.Gas_Requests:active {
+    transform: translateY(0); /* Reset movement on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Original shadow on click */
+}
+
+/*Gas Requests and Token*/
+section.Gas_Requests_and_Token {
+    color: #000;
+}
+section.Gas_Requests_and_Token .title {
+    font-size: 40px;
+    font-style: bold;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.Gas_Requests_container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button.btn_request {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button.btn_request:hover {
+    background-color: #0056b3;
+}
+
+/* Message Box Styles */
+#messageBox {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#messageBox.success {
+    border: 2px solid green;
+    color: green;
+}
+
+#messageBox.error {
+    border: 2px solid red;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Token card container */
+.token-card {
+    background-color: #f4f4f4; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Spacing inside the card */
+    max-width: 400px; /* Limit the card width */
+    margin: 20px auto; /* Center align and add spacing */
+    text-align: left; /* Left-align the text */
+}
+
+/* Title styling */
+.token-card h2 {
+    font-size: 20px; /* Slightly larger font for title */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #2c3e50; /* Dark blue-gray color */
+    margin-bottom: 15px; /* Space below title */
+    text-align: center; /* Center align title */
+}
+
+/* Token details styling */
+.token-details p {
+    font-size: 16px; /* Standard font size */
+    color: #555; /* Medium gray text */
+    margin: 8px 0; /* Space between lines */
+}
+
+.token-details strong {
+    color: #2c3e50; /* Highlight labels with dark blue-gray */
+}
+
+.token-details span {
+    color: #2980b9; /* Blue text for token values */
+}
+
+/* Container styling */
+#Outlet_location {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input box styling */
+.location {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Input focus effect */
+.location:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Suggestions display */
+#display {
+    display: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+/* Styling each suggestion item */
+#display div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Hover effect for suggestion items */
+#display div:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hide suggestions when no input */
+#display {
+    display: none;
+}
+
+/* Container for cards */
+.outlet-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 200px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+.card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Content styling */
+.card__content {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Date/Stock styling */
+.card__date {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 15px;
+}

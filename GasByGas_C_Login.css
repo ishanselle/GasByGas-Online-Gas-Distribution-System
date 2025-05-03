@@ -1,0 +1,389 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e8c6ff;
+    background-image: url(Pictures/03.png);
+    background-position: center;
+    background-size: cover;
+    color: #000000;
+}
+
+/* Container for the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+    scroll-padding-top: 3.50rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex-grow: 1;
+    flex-basis: 200px;
+  }
+
+
+/* Login Section Styling */
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 2em;
+  background-color: #a825ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px #a825ff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Login:hover {
+  transform: scale(1.05);
+}
+
+/* Form Heading */
+.Login h2 {
+  font-size: 1.8em;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1em;
+}
+
+/* Logo Styling */
+.Login img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Form Group Styling */
+.Login .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.Login label {
+  font-size: 0.9em;
+  color: #000000;
+}
+
+.Login input {
+  padding: 0.8em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.Login input:focus {
+    border-color: #e8c6ff;
+    box-shadow: 0 0 5px #e8c6ff;
+    outline: none;
+}
+
+/* Buttons Styling */
+.Login .login-btn,
+.Login .clear-btn {
+  padding: 0.8em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #252525;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.Login .login-btn:hover {
+  background-color: #007bff;
+}
+
+.Login .clear-btn:hover {
+  background-color: #f44336;
+}
+
+/* Links and Additional Information */
+.Login .forgot-password p,
+.Login .signup p {
+  font-size: 0.9em;
+  color: #000000;
+  margin: 1em 0;
+}
+
+.Login a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Login a:hover {
+  text-decoration: underline;
+}
+
+/* General Styles for the Customer_Registration Section */
+.Customer_Registration {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #a825ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #a825ff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+/* Form Heading */
+.Customer_Registration h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Logo Image */
+.Customer_Registration img {
+    display: block;
+    margin: 10px auto 20px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Form Group Styles */
+.Customer_Registration .form-group {
+    margin-bottom: 15px;
+}
+
+.Customer_Registration .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.Customer_Registration .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #000000;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: border-color 0.3s;
+
+}
+
+.Customer_Registration .form-group input:focus {
+    border-color: #e8c6ff;
+    box-shadow: 0 0 5px #e8c6ff;
+    outline: none;
+}
+
+/* Button Styles */
+.Customer_Registration .R_btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #252525;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Customer_Registration .R_btn:hover {
+    background-color: #f44336;
+}
+
+.Customer_Registration .R_btn:last-of-type {
+    background-color: #252525;
+}
+
+.Customer_Registration .R_btn:last-of-type:hover {
+    background-color: #007bff;
+}
+
+/* Note Section */
+.Customer_Registration .note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.Customer_Registration .note a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.Customer_Registration .note a:hover {
+    text-decoration: underline;
+}
+/*Organization Registration*/
+.Organization_Registration {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #a825ff;
+    box-shadow: 0 4px 8px #a825ff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.Organization_Registration h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Organization_Registration img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100px;
+}
+
+.Organization_Registration p {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #000000;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #e8c6ff;
+    outline: none;
+    box-shadow: 0 0 5px #e8c6ff;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    padding: 0 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-reset,
+.btn-submit {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #252525;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn-reset {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+.btn-reset:hover {
+    background-color: #f44336;
+}
+
+.btn-submit {
+    background-color: #252525;
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.note a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.note a:hover {
+    text-decoration: underline;
+}
+.error-box {
+    background-color: #ffe6e6;
+    color: #d9534f;
+    border: 1px solid #d43f3a;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}

@@ -1,0 +1,1 @@
+{"version":1,"defects":{"UserAuthTest::testLoginWithValidCustomer":8,"UserAuthTest::testLoginWithValidOrganization":8,"UserAuthTest::testLoginWithInvalidCredentials":8,"UserAuthTest::testLoginWithEmptyFields":8},"times":[]}

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh  ;
+    background:url(gasbygas.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section{
+    width: 420px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    height:auto;
+    padding: 30px 40px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 650px;
+    text-align: center;
+}
+.content .info{
+    text-align: center;
+    margin: 10px 0;
+}
+.content .info h2{
+    color: #a1a0a0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+.content .info h1{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-weight: 900;
+
+}
+.content .info h3{
+    color:#a1a0a0;
+    font-size: 25px;
+    font-weight: 800;
+}
+.btn-login{
+    width:  35%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.btn-login:hover{
+    background: #ffa500;
+}

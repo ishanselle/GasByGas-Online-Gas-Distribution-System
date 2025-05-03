@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('HBG04.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.go-back-btn {
+    background: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover {
+    background-color: #e69500;
+}
+
+.content {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+}
+
+.wrapper {
+    width: 60%; /* Reduced width from 80% to 60% */
+    max-width: 375px; /* Adjusted max-width if needed */
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    z-index: 10;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: #fff;
+}
+
+/* Dropdown styles */
+#outletId, #gasType {
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding to make it look better */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for the dropdowns */
+#outletId:hover, #gasType:hover {
+    background-color: #007bff; /* Blue background on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+
+/* Focus effect for the dropdowns */
+#outletId:focus, #gasType:focus {
+    outline: none; /* Remove default outline */
+    border-color: #0056b3; /* Blue border when focused */
+}
+
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.schedule-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.schedule-btn:hover {
+    background-color: #218838;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.clear-btn:hover {
+    background-color: #c82333;
+}

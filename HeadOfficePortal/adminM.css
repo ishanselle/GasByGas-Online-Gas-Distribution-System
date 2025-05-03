@@ -1,0 +1,125 @@
+/* Reset and general styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('HBG03.png'); /* Replace with your actual image file */
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); /* Overlay effect */
+    color: #fff;
+}
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffa500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #e69500;
+}
+
+.back-button i {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+/* Content heading styles */
+.content {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main content container styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Card styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 280px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.card i {
+    font-size: 50px; /* Icon size */
+    color: #ffa500; /* Icon color */
+    margin-bottom: 15px; /* Spacing below the icon */
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #e69500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+}

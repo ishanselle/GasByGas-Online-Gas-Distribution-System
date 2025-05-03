@@ -1,0 +1,693 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e8c6ff;
+    background-image: url(Pictures/HBG04.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+}
+
+/* Container for the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+    scroll-padding-top: 3.50rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex-grow: 1;
+    flex-basis: 200px;
+  }
+/* General styling for the navigation bar */
+.nav-bar {
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Places the navbar on top of other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(30px); /* Adds a blur effect to the background */
+    background-color: #a825ff; /* Dark background color */
+    box-shadow: 0px 0px 30px #a825ff;
+    max-width: auto;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    border: 1px solid #a825ff; /* Border to contain the blur effect */
+}
+
+/* Logo section */
+.logo img {
+    height: 50px; /* Adjust the logo size */
+    width: auto;
+}
+
+/* Navigation links */
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between navigation links */
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #000;  
+  background-color: #e8c6ff; /* Slightly lighter background on hover */
+  border-radius: 5px;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #888; /* Slightly darker border on focus */
+}
+
+.search-bar .search {
+    padding: 5px 10px;
+    border: none;
+    background-color: #575757;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar .search:hover {
+    background-color: #444; /* Darker background on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+}
+/*header*/
+header {
+  display: flex; /* Enable flexbox for layout alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  padding: 25px 20px 40px; /* Top, left/right, and bottom padding */
+  background-color: #333; /* Fallback background color */
+  background-image: url('Pictures/02.png'); /* Corrected background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevent image repetition */
+  color: white; /* Text color */
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margin */
+  margin-bottom: 20px; /* Bottom spacing */
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sub_title {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Login_signup {
+    
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1.5px solid #e8c6ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .Login_signup:hover {
+    background: #a825ff;
+    box-shadow: 0 0 30px 5px #a825ff;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .Login_signup:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .Login_signup::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .Login_signup:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+    .Login_signup:active::before {
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
+}
+
+.services {
+    padding: 5px 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.services_title {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 270px;
+    perspective: 1000px;
+    margin: 15px auto;
+    margin: 40px; /* Adjust spacing between cards */
+    display: inline-block; /* Align cards horizontally */
+    font-family: sans-serif;
+  }
+  
+  .flip-card-front .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    filter: drop-shadow(0 0 10px #a825ffa7); /* Shadow effect on hover */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(80, 144, 255);
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, rgb(196, 202, 255) 60%, #dedeff 88%,
+       #c3cdff 40%, #6d50ff9a 48%);
+    color: #7950ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd; /* Light border for separation */
+  }
+
+  .flip-card-front img {
+    width: 60px; /* Placeholder size for images */
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Rounded image */
+}
+
+.flip-card-front .title {
+    font-size: 1.2rem;
+    color: #1d1d1d;
+    margin: 10px 0;
+}
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(196, 202, 255) 30%, #dedeff 88%,
+       #c3cdff 40%, #6d50ff9a 78%);
+    color: #000000;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotateY(180deg); /* Positioned for the flip effect */
+    padding: 20px;
+    border-radius: 10px;
+  }
+/* General styling for the About section */
+.About {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Improved readability */
+  color: #1d1d1d; /* Neutral text color */
+}
+
+/* Title styling */
+.About_title {
+  font-size: 2.5rem;
+  color: #000000; /* Green title to signify trust and eco-friendliness */
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.About_p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 800px; /* Limit paragraph width for better readability */
+  text-align: center; /* Aligns text for a cleaner look */
+}
+
+.About_p br {
+  margin-top: 20px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* Responsive adjustments for smaller screens */
+  .About_title {
+      font-size: 2rem;
+  }
+
+  .About_p {
+      font-size: 1rem;
+      padding: 0 10px;
+  }
+}
+/* General styling for the Contact section */
+.Contact {
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #1d1d1d; /* Neutral text color */
+}
+
+/* Title styling */
+.Contact_title {
+  font-size: 2.5rem;
+  color: #000000; /* Green color for a friendly tone */
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.Contact_p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Icons container styling */
+.C_icon {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Space between icons */
+  flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+  margin-top: 20px;
+}
+
+/* Icon images styling */
+.C_icon img {
+  width: 50px; /* Set icon size */
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.C_icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  filter: drop-shadow(0 0 5px #a825ffa7); /* Shadow effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Contact_title {
+      font-size: 2rem;
+  }
+
+  .Contact_p {
+      font-size: 1rem;
+  }
+
+  .C_icon img {
+      width: 40px;
+      height: 40px;
+  }
+}
+/* General styling for the footer */
+footer {
+  background-color: #333; /* Dark background for footer */
+  width: 100%;
+  color: #fff; /* White text for contrast */
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Center the items vertically */
+}
+
+.footer_details {
+  max-width: 400px; /* Limit the width of the details */
+  padding-left: 5px;
+}
+
+.footer_details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer_C {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 660px;
+}
+
+.footer_C p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: right; /* Align text to the right */
+}
+
+/* General styling for the Registration section */
+.Registration {
+  background-color: transparent; /* Light background color */
+  padding: 10px 10px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Title styling */
+.Registration_title {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Card container styling */
+.Registration_Card {
+  display: inline-block;
+  background: linear-gradient(120deg, rgb(196, 202, 255) 60%, #dedeff 88%,
+       #c3cdff 40%, #6d50ff9a 48%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.Registration_Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #6d50ff9a;
+}
+
+/* Heading inside the card */
+.Card_Heading {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Description inside the card */
+.Card_Description {
+  font-size: 1rem;
+  color: #1d1d1d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.Card_Button {
+  background-color: transparent; /* Primary button color */
+  color: #1d1d1d;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  border: 1.5px solid #a825ff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.Card_Button:hover {
+  background: #a825ff;
+  color: #ffffff;
+  box-shadow: 0 0 30px 5px #a825ff;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Registration {
+      padding: 30px 15px;
+  }
+
+  .Registration_title {
+      font-size: 2rem;
+  }
+
+  .Registration_Card {
+      max-width: 90%;
+      margin: 20px auto;
+  }
+}
+
+/* Login Section Styling */
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #a825ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px #a825ff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Login:hover {
+  transform: scale(1.05);
+}
+
+/* Form Heading */
+.Login h2 {
+  font-size: 1.8em;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1em;
+}
+
+/* Logo Styling */
+.Login img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Form Group Styling */
+.Login .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.Login label {
+  font-size: 0.9em;
+  color: #000000;
+}
+
+.Login input {
+  padding: 0.8em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #252525;
+  color: #d3d3d3;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.Login input:focus {
+  border: 1px solid #ffffff;
+}
+
+/* Buttons Styling */
+.Login .login-btn,
+.Login .clear-btn {
+  padding: 0.8em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #252525;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.Login .login-btn:hover {
+  background-color: #007bff;
+}
+
+.Login .clear-btn:hover {
+  background-color: #f44336;
+}
+
+/* Links and Additional Information */
+.Login .forgot-password p,
+.Login .signup p {
+  font-size: 0.9em;
+  color: #000000;
+  margin: 1em 0;
+}
+
+.Login a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Login a:hover {
+  text-decoration: underline;
+}

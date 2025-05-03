@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="GasByGas_C_Login.css">
+</head>
+<body>
+    <section class="Customer_Registration">
+        <form id="Customer_Registration" name="Customer_Registration" method="post" action="customer_registration.php">
+            <h2>Customer Registration</h2>
+            <p>Enter your Personal Information...</p>
+            
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+        
+            <!-- Username (Optional) -->
+            <div class="form-group">
+                <label for="username">Username (Optional):</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" maxlength="10">
+            </div>
+        
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a secure password" minlength="8" required>
+            </div>
+        
+            <!-- NIC -->
+            <div class="form-group">
+                <label for="nic">National Identity Card (NIC) Number:</label>
+                <input type="text" id="nic" name="nic" placeholder="Enter your NIC number" pattern="[0-9Vv]{10,12}" required>
+                <small>NIC should be 10 or 12 characters long with numbers and optionally 'V/v'.</small>
+            </div>
+        
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                <small>Phone number should be 10 digits.</small>
+            </div>
+            
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+        
+        
+            <!-- Submit and Reset Buttons -->
+            <div class="form-actions">
+                <button type="reset" class="R_btn">Clear</button>
+                <button type="submit" class="R_btn">Register</button>
+            </div>
+        
+            <!-- Login Note -->
+            <div class="note">
+                <p>Already have an account? <a href="GasByGas_C_Login.html">Login here</a></p>
+            </div>
+        </form>
+
+        
+    </section>
+</body>
+</html>

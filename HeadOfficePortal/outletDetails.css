@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('HBG04.png') no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+}
+
+/* Wrapper for Table - Expand to max screen width */
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 50px 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    z-index: 10;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content Heading - Align Top Left */
+.content {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+/* Top Right Button */
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.go-back-btn {
+    background: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover {
+    background-color: #e69500;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+}
+
+td {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    cursor: not-allowed;
+}
+
+input[type="text"]:focus {
+    border-color: #ffa500;
+}
+
+input[type="text"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown Styles */
+#outletId, #gasType {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect for dropdowns */
+#outletId:hover, #gasType:hover {
+    background-color: #333;
+    border-color: #ffa500;
+}
+
+/* Focus effect for dropdowns */
+#outletId:focus, #gasType:focus {
+    background-color: #444;
+    border-color: #ffa500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+        padding: 30px 40px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
